@@ -9,7 +9,7 @@ def randomletters(length):
     letters = string.ascii_letters
     return ''.join(random.choice(letters) for i in range(length))
 
-TOKEN = ("enter your bot token here")
+TOKEN = ("INSERT TOKEN HERE")
 
 client=discord.Client()
 
@@ -24,7 +24,7 @@ async def on_member_ban(guild,user):
     
 @client.event
 async def on_message(message):
-    response = 'DIE NAZI SCUM https://cdn.discordapp.com/attachments/796464234032136242/827273802152280134/Soviet_Power.mp4'
+    response = 'INSERT RESPONCE'
     x=100
     while int(x)==100:
         print("message sent "+random.choice(string.ascii_letters))
@@ -58,6 +58,6 @@ async def on_message(message):
         
 @client.event
 async def on_guild_channel_create(channel):
-    await channel.send("ML BATTALION HAS RISEN, DIE NAZI SCUM @everyone")
+    await channel.send("ADD MESSAGE HERE @everyone")
 
 client.run(TOKEN)
